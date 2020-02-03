@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dotsbackgroundpurple1"
+    tools:context=".ProjectsListActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabNewProj"
+        android:layout_width="85dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="320dp"
+        android:background="@color/teal2"
+        android:clickable="true"
+        android:onClick="onFabClick"
+        android:scaleType="fitCenter"
+        app:backgroundTint="@color/teal2"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:maxImageSize="60dp"
+        app:srcCompat="@drawable/a042needle"
+        app:useCompatPadding="true"
+        />
+
+    <GridView
+        android:id="@+id/gvProjectsList"
+        android:layout_width="421dp"
+        android:layout_height="424dp"
+        android:clickable="true"
+        android:numColumns="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="165dp"
+        android:fontFamily="@font/luckiest_guy"
+        android:text="Projects\nList"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="157dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/gvProjectsList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeader"
+        app:srcCompat="@drawable/a008dummy" />
+
+    <!-- TODO: Make the image into a "new" button - so "photoshop" it into
+            one image
+     -->
+</androidx.constraintlayout.widget.ConstraintLayout>

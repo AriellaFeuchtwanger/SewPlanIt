@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dotsbackgroundyellow1"
+    tools:context=".ProjectActivity">
+    <ImageView
+        android:id="@+id/ivProjectImage"
+        android:layout_width="173dp"
+        android:layout_height="161dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/a007dummy1" />
+
+    <TextView
+        android:id="@+id/tvProjectName"
+        android:layout_width="131dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="242dp"
+        android:text="Project Name:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivProjectImage"
+        />
+
+    <TextView
+        android:id="@+id/tvProjectPattern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="323dp"
+        android:text="Pattern:"
+        app:layout_constraintBottom_toTopOf="@+id/spPatterns"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spFabrics" />
+
+    <TextView
+        android:id="@+id/tvProjectFabric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="332dp"
+        android:text="Fabric:"
+        app:layout_constraintBottom_toTopOf="@+id/spFabrics"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etProjectName" />
+
+    <TextView
+        android:id="@+id/tvProjectStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="330dp"
+        android:text="Status:"
+        app:layout_constraintBottom_toTopOf="@+id/pbStatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spPatterns" />
+
+    <TextView
+        android:id="@+id/tvProjectNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="332dp"
+        android:text="Notes:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pbStatus" />
+
+    <EditText
+        android:id="@+id/etProjectName"
+        android:layout_width="335dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:ems="10"
+        android:inputType="textNoSuggestions"
+        android:hint="Project Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProjectName" />
+
+    <EditText
+        android:id="@+id/etProjectNotes"
+        android:layout_width="328dp"
+        android:layout_height="188dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="81dp"
+        android:ems="10"
+        android:inputType="textNoSuggestions"
+        android:hint="Notes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProjectNotes"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/spPatterns"
+        android:layout_width="335dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProjectPattern" />
+
+    <Spinner
+        android:id="@+id/spFabrics"
+        android:layout_width="335dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvProjectPattern"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProjectFabric" />
+
+    <ProgressBar
+        android:id="@+id/pbStatus"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="335dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProjectStatus" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

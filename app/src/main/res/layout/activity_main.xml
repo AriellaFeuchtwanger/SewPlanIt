@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/sewplanitbackground1">
+
+    <TableLayout
+        android:id="@+id/tlButtons"
+        android:layout_width="426dp"
+        android:layout_height="290dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWelcome">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnProjects"
+                android:layout_width="218dp"
+                android:layout_height="100dp"
+                android:background="@drawable/purplebutton"
+                android:onClick="onClick"
+                android:fontFamily="@font/luckiest_guy"
+                android:textSize="30sp"
+                android:text="Projects" />
+
+            <Button
+                android:id="@+id/btnPatterns"
+                android:layout_width="218dp"
+                android:layout_height="100dp"
+                android:background="@drawable/tealbutton"
+                android:onClick="onClick"
+                android:text="Patterns"
+                android:fontFamily="@font/luckiest_guy"
+                android:textSize="30sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnFabrics"
+                android:layout_width="218dp"
+                android:layout_height="100dp"
+                android:background="@drawable/tealbutton"
+                android:onClick="onClick"
+                android:text="Fabrics"
+                android:fontFamily="@font/luckiest_guy"
+                android:textSize="30sp"/>
+
+            <Button
+                android:id="@+id/btnSettings"
+                android:layout_width="218dp"
+                android:layout_height="100dp"
+                android:background="@drawable/purplebutton"
+                android:onClick="onClick"
+                android:fontFamily="@font/luckiest_guy"
+                android:textSize="30sp"
+                android:text="Settings" />
+        </TableRow>
+
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/ivMainImage"
+        android:layout_width="224dp"
+        android:layout_height="191dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="114dp"
+        android:layout_marginEnd="125dp"
+        android:contentDescription="Main image"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/a049sewingmachine1" />
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="336dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="174dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="174dp"
+        android:layout_marginBottom="109dp"
+        android:fontFamily="@font/luckiest_guy"
+        android:text="Welcome!"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/tlButtons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivMainImage"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dotsbackgroundteal1"
+    tools:context=".FabricActivity">
+
+    <ImageView
+        android:id="@+id/ivFabricImage"
+        android:layout_width="173dp"
+        android:layout_height="161dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/a003fabric" />
+
+    <TextView
+        android:id="@+id/tvFabricName"
+        android:layout_width="131dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="242dp"
+        android:text="Fabric Name:"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/etFabricName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivFabricImage" />
+
+    <EditText
+        android:id="@+id/etFabricName"
+        android:layout_width="335dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Fabric Name"
+        app:layout_constraintBottom_toTopOf="@+id/tvFabricCompany"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFabricName" />
+
+    <TextView
+        android:id="@+id/tvFabricCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="284dp"
+        android:text="Fabric Company:"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/etFabricCompany"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFabricName" />
+
+    <EditText
+        android:id="@+id/etFabricCompany"
+        android:layout_width="335dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Fabric Company"
+        app:layout_constraintBottom_toTopOf="@+id/tvFabricLink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFabricCompany" />
+
+    <TextView
+        android:id="@+id/tvFabricLink"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="345dp"
+        android:text="Link: "
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/etFabricLink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFabricCompany" />
+
+    <EditText
+        android:id="@+id/etFabricLink"
+        android:layout_width="335dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Link"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFabricLink" />
+
+    <TextView
+        android:id="@+id/tvFabricContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="292dp"
+        android:text="Fabric Content:"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/etFabricContent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFabricLink" />
+
+    <EditText
+        android:id="@+id/etFabricContent"
+        android:layout_width="335dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Fabric Content"
+        app:layout_constraintBottom_toTopOf="@+id/tvFabricNotes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFabricContent" />
+
+    <TextView
+        android:id="@+id/tvFabricNotes"
+        android:layout_width="92dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="281dp"
+        android:text="Notes"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/etFabricNotes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFabricContent" />
+
+    <EditText
+        android:id="@+id/etFabricNotes"
+        android:layout_width="335dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:hint="Notes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFabricNotes" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

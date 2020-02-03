@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dotsbackgroundyellow1"
+    tools:context=".FabricsListActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabNewProj"
+        android:layout_width="85dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="320dp"
+        android:background="@color/teal2"
+        android:clickable="true"
+        android:onClick="onFabClick"
+        android:scaleType="fitCenter"
+        app:backgroundTint="@color/teal2"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:maxImageSize="60dp"
+        app:srcCompat="@drawable/a042needle"
+        app:useCompatPadding="true"
+        />
+
+    <GridView
+        android:id="@+id/gvFabrics"
+        android:layout_width="398dp"
+        android:layout_height="428dp"
+        android:layout_marginTop="14dp"
+        android:numColumns="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/tvHeaddr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="25dp"
+        android:text="Fabrics"
+        android:textSize="60sp"
+        android:fontFamily="@font/luckiest_guy"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="207dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/gvFabrics"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeaddr"
+        app:srcCompat="@drawable/a003fabric" />
+</androidx.constraintlayout.widget.ConstraintLayout>

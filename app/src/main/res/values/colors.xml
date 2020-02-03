@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <!-- Theme Colors -->
+    <color name="purple1">#EBCFFC</color>
+    <color name="purple2">#d4a0f2</color>
+    <color name="purple3">#bb76e3</color>
+    <color name="purple4">#9e50cc</color>
+
+    <color name="teal1">#cdfbf1</color>
+    <color name="teal2">#9af2de</color>
+    <color name="teal3">#6ee1c8</color>
+    <color name="teal4">#48c8ab</color>
+
+    <color name="orange1">#ffe7d0</color>
+    <color name="orange2">#ffd0a3</color>
+    <color name="orange3">#ffbc7d</color>
+    <color name="orange4">#ffab5b</color>
+
+    <color name="yellow1">#ffffd0</color>
+    <color name="yellow2">#fffea3</color>
+    <color name="yellow3">#fffe7d</color>
+    <color name="yellow4">#fffe5b</color>
+</resources>

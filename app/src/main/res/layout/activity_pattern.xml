@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dotsbackgroundpurple1"
+    tools:context=".PatternActivity">
+    <ImageView
+        android:id="@+id/ivPatternImage"
+        android:layout_width="173dp"
+        android:layout_height="161dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/a010pattern" />
+
+    <TextView
+        android:id="@+id/tvPatternName"
+        android:layout_width="131dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="242dp"
+        android:text="Pattern Name:"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivPatternImage" />
+
+    <TextView
+        android:id="@+id/tvPatternCreator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="316dp"
+        android:text="Creator:"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPatternName" />
+
+    <TextView
+        android:id="@+id/tvPatternLink"
+        android:layout_width="79dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="294dp"
+        android:text="Link:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPatternCreator" />
+
+    <TextView
+        android:id="@+id/tvSuggestedFabrics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="235dp"
+        android:text="Suggested Fabrics:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPatternLink" />
+
+    <TextView
+        android:id="@+id/tvPatternNotes"
+        android:layout_width="72dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="301dp"
+        android:text="Notes:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/etPatternNotes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <EditText
+        android:id="@+id/etPatternName"
+        android:layout_width="330dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:ems="10"
+        android:hint="Pattern Name"
+        android:inputType="textNoSuggestions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPatternName" />
+
+    <EditText
+        android:id="@+id/etPatternCreator"
+        android:layout_width="330dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:ems="10"
+        android:hint="Creator"
+        android:inputType="textNoSuggestions"
+        app:layout_constraintBottom_toTopOf="@+id/tvPatternLink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPatternCreator" />
+
+    <EditText
+        android:id="@+id/etPatternLink"
+        android:layout_width="330dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:ems="10"
+        android:hint="Creator"
+        android:inputType="textNoSuggestions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPatternLink" />
+
+    <EditText
+        android:id="@+id/etPatternNotes"
+        android:layout_width="330dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="111dp"
+        android:ems="10"
+        android:hint="Notes"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPatternNotes" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="337dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvPatternNotes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSuggestedFabrics" />
+</androidx.constraintlayout.widget.ConstraintLayout>

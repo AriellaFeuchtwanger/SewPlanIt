@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "964171716323",
+    "firebase_url": "https://sewplanit.firebaseio.com",
+    "project_id": "sewplanit",
+    "storage_bucket": "sewplanit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964171716323:android:6452886142396eb57017d6",
+        "android_client_info": {
+          "package_name": "com.craftycodersapps.sewplanit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "964171716323-3tah40f56tkihvhl15fift3u09nv7lsb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzrJmt-Jf7VvSETknHFFyF4NOZzxp4qzc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "964171716323-3tah40f56tkihvhl15fift3u09nv7lsb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
